@@ -128,6 +128,9 @@ defaults write com.apple.dock mru-spaces -bool false
 # Don’t show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
+# Don't show recent apps in dock
+defaults write com.apple.dock show-recents -bool false
+
 # Hot corners
 # Possible values:
 #  0: no-op
@@ -225,5 +228,10 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 
 # Change Screenshot Location
 defaults write com.apple.screencapture location ~/Pictures/Screenshots/
+
+echo "Editing Menu Bar Settings..."
+# remove spotlight from menu bar
+defaults -currentHost write com.apple.Spotlight MenuItemHidden -int 1
+
 
 osascript -e 'tell application "System Events" to restart';

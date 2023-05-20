@@ -51,7 +51,6 @@ cask "docker"
 cask "dozer"
 # Free and open-source image editor
 cask "gimp"
-cask "google-backup-and-sync"
 # Web browser
 cask "google-chrome"
 # JetBrains tools manager
@@ -60,8 +59,6 @@ cask "jetbrains-toolbox"
 cask "miro"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
-# Collaboration platform for API development
-cask "postman"
 # JavaScript playground that auto-evaluates as code is typed
 cask "runjs"
 # Music streaming service
