@@ -15,8 +15,6 @@ brew "openssl@1.1"
 brew "readline"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
-# Emacs dependency management
-brew "cask"
 # Distributed revision control system
 brew "git"
 # Small git utilities
