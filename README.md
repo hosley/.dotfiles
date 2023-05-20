@@ -1,1 +1,3 @@
 # .dotfiles
+
+machine setup repo
