@@ -53,8 +53,6 @@ cask "docker"
 cask "dozer"
 # Free and open-source image editor
 cask "gimp"
-# Desktop client for GitHub repositories
-cask "github"
 cask "google-backup-and-sync"
 # Web browser
 cask "google-chrome"
