@@ -7,62 +7,36 @@ tap "mongodb/brew"
 tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "qmk/qmk"
-# General-purpose data compression with high compression ratio
 brew "xz"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
-# Library for command-line editing
-brew "readline"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Distributed revision control system
 brew "git"
-# Small git utilities
 brew "git-extras"
-# Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Kubernetes command-line interface
+brew "gradle"
 brew "kubernetes-cli"
-# Mac App Store command-line interface
 brew "mas"
-# Manage multiple Node.js versions
+brew "openjdk@17"
+brew "openssl@1.1"
 brew "nvm"
-# Python dependency management tool
+brew "readline"
 brew "pipenv"
-# Protocol buffers (Google's data interchange format)
+brew "pnpm"
 brew "protobuf"
-# Python version management
 brew "pyenv"
-# JavaScript package manager
+brew "python@3.9"
 brew "yarn"
-# UNIX shell (command interpreter)
 brew "zsh"
-# High-performance, schema-free, document-oriented database
 brew "mongodb/brew/mongodb-community"
-# Quantum Mechanical Keyboard (QMK) Firmware
 brew "qmk/qmk/qmk"
-# Application launcher and productivity software
 cask "alfred"
-# Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
 cask "docker"
-# Tool to hide status bar icons
 cask "dozer"
-# Free and open-source image editor
 cask "gimp"
-# Web browser
 cask "google-chrome"
-# JetBrains tools manager
 cask "jetbrains-toolbox"
-# Online collaborative whiteboard platform
 cask "miro"
-# Tool to control external monitor brightness & volume
 cask "monitorcontrol"
-# JavaScript playground that auto-evaluates as code is typed
 cask "runjs"
-# Music streaming service
 cask "spotify"
-# VPN provided by Google One
-cask "vpn-by-google-one"
 mas "LastPass", id: 926036361
+mas "Xcode", id: 497799835
