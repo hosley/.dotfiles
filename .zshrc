@@ -136,6 +136,7 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
 export NODE_ENV="development"
 export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.7)
 
