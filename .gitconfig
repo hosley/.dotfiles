@@ -11,3 +11,39 @@
 [core]
 	excludesfile = ~/.gitignore
 	filemode = false
+	editor = idea -n -w
+[status]
+	aheadBehind = true
+	branch = true
+	short = true
+	showStash = true
+	showUntrackedFiles = all
+[diff]
+	colorMoved = true
+	algorithm = histogram
+[init]
+	defaultBranch = main
+[rebase]
+	autosquash = true
+	autostash = true
+	updateRefs = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[merge]
+	conflictstyle = zdiff3
+	tool = intellij
+	keepbackup = false
+[mergetool "intellij"]
+	cmd = idea merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+	trustExitCode = true
+[fetch]
+	prune = true
+[grep]
+	linenumber = true
+[color]
+	ui = auto
+[help]
+	autocorrect = prompt
+[branch]
+	sort = -committerdate
