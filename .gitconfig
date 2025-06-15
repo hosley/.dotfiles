@@ -21,6 +21,9 @@
 [diff]
 	colorMoved = true
 	algorithm = histogram
+	tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [init]
 	defaultBranch = main
 [rebase]
@@ -32,8 +35,10 @@
 	autoupdate = true
 [merge]
 	conflictstyle = zdiff3
-	tool = intellij
+	tool = code
 	keepbackup = false
+[mergetool "code"]
+    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [mergetool "intellij"]
 	cmd = idea merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 	trustExitCode = true
@@ -47,3 +52,5 @@
 	autocorrect = prompt
 [branch]
 	sort = -committerdate
+[alias]
+	squash-branch = "!f() { \\\n  base=$(git merge-base origin/HEAD HEAD); \\\n  msg=$(git log \"$base\"..HEAD --reverse --pretty=format:%s | head -n1); \\\n  git reset --soft \"$base\" && git commit -m \"$msg\"; \\\n}; f"

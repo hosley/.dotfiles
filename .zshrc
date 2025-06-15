@@ -171,6 +171,12 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 export NODE_ENV="development"
 export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.7)
 export HELIX_RUNTIME=~/src/helix/runtime
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export NODE_COMPILE_CACHE=~/.cache/nodejs-compile-cache
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 #########
 # Aliases
