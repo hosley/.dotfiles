@@ -54,3 +54,5 @@
 	sort = -committerdate
 [alias]
 	squash-branch = "!f() { \\\n  base=$(git merge-base origin/HEAD HEAD); \\\n  msg=$(git log \"$base\"..HEAD --reverse --pretty=format:%s | head -n1); \\\n  git reset --soft \"$base\" && git commit -m \"$msg\"; \\\n}; f"
+	stash-save = "!f() { \\\n  if [ -z \"$1\" ]; then \\\n    echo \"Usage: git stash-name \\\"Your stash message\\\"\" >&2; \\\n    exit 1; \\\n  fi; \\\n  git stash push -m \"$1\"; \\\n}; f"
+	stash-fetch = "!f() { \\\n  match=\"$1\"; \\\n  stash=$(git stash list | grep \"$match\" | head -n1 | cut -d: -f1); \\\n  if [ -n \"$stash\" ]; then \\\n    git stash apply \"$stash\"; \\\n  else \\\n    echo \"No stash matching \\\"$match\\\" found.\" >&2; \\\n    exit 1; \\\n  fi; \\\n}; f"
